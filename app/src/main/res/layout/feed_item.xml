@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="1dp"
+    android:layout_marginBottom="12dp"
+    app:cardElevation="1dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <com.app.shixelsdating.ui.widgets.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/feed_publisher_image_view"
+                android:src="@drawable/babe" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/feed_publisher_name_view"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    app:fontName="Roboto-Bold.ttf" />
+
+                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/feed_type"
+                    android:textColor="@color/icons_color"
+                    android:textSize="14sp"
+                    app:fontName="Roboto-Medium.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/feed_shared_time_icon"
+                    tools:ignore="ContentDescription" />
+
+                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/feed_publish_date"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    app:fontName="Roboto-Medium.ttf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/feed_content_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ease_default_image"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:background="?attr/selectableItemBackground"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:id="@+id/feed_content_description"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    app:fontName="Roboto-Regular.ttf" />
+
+                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/feed_available_slots"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    app:fontName="Roboto-Bold.ttf" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/shopper_bag"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:id="@+id/like_feed_image_view"
+                    android:src="@drawable/ic_heart_gray"
+                    android:layout_height="25dp"
+                    tools:ignore="ContentDescription" />
+
+                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    app:fontName="Roboto-Bold.ttf"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/icons_color"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/feed_likes_counter"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/comment_icon"
+                    android:layout_height="30dp"
+                    tools:ignore="ContentDescription" />
+
+                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    app:fontName="Roboto-Bold.ttf"
+                    android:id="@+id/feed_comment_counter"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/icons_color"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:src="@drawable/share_icon"
+                    android:layout_height="25dp"
+                    tools:ignore="ContentDescription" />
+
+                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    app:fontName="Roboto-Bold.ttf"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/feed_shares_counter"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/icons_color"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

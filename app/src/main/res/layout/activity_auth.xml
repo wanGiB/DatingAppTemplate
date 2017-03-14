@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fillViewport="true"
+        android:overScrollMode="ifContentScrolls"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginStart="35dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_logo"
+                android:src="@drawable/app_logo" />
+
+            <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/meet_new_people_family_and_friends"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                app:fontName="Roboto-Regular.ttf" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/wewak_pink"
+                        android:contentDescription="@string/username"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_person_white_24dp" />
+
+                    <EditText
+                        android:id="@+id/username_field"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:hint="@string/username"
+                        android:padding="14dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/wewak_pink"
+                        android:contentDescription="@string/password"
+                        android:padding="12dp"
+                        android:src="@drawable/pword_icon" />
+
+                    <EditText
+                        android:id="@+id/password_field"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:padding="14dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/remember_me_check_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="1dp"
+                    app:cardElevation="4dp"
+                    app:cardUseCompatPadding="true">
+
+                    <CheckBox
+                        android:id="@+id/remember_me_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="3dp"
+                        android:button="@drawable/auth_checkbox_background"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                </android.support.v7.widget.CardView>
+
+                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                    android:id="@+id/remember_me_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/remember_me"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    app:fontName="Roboto-Regular.ttf" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/email_login_label_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                app:cardBackgroundColor="@color/wewak_pink"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+
+                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                    android:id="@+id/email_login_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="@string/login"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    app:fontName="Roboto-Bold.ttf" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/facebook_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/facebook_login_button_delegate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@drawable/glyph_facebook"
+                android:drawableStart="@drawable/glyph_facebook"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/btn_text_login_fb"
+                android:textStyle="bold"
+                android:theme="@style/Widget.Button.Login.Facebook" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

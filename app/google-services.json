@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "379124986344",
+    "firebase_url": "https://shixelsdatingapp.firebaseio.com",
+    "project_id": "shixelsdatingapp",
+    "storage_bucket": "shixelsdatingapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379124986344:android:37f0131d310e5c6b",
+        "android_client_info": {
+          "package_name": "com.app.shixelsdating"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379124986344-og67qd85tatoaplpihmtutumr6c41t9t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.shixelsdating",
+            "certificate_hash": "7b3886462578e58b9752f44d2e28f40ce83b654b"
+          }
+        },
+        {
+          "client_id": "379124986344-6p33unr067vn6g1tq707dbolerr627lg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4lDLjV-tfMxvZvPL1lzjBFVLYIrgJ1tc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "379124986344-6p33unr067vn6g1tq707dbolerr627lg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
