@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "379124986344-fr24orvt0crfv2v1pu6smogo43ha3417.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.shixelsdating",
+            "certificate_hash": "e372474f9ef4e888ab9aa5245b6cbfb8dca119e0"
+          }
+        },
+        {
           "client_id": "379124986344-og67qd85tatoaplpihmtutumr6c41t9t.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
