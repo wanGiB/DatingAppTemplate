@@ -1,1 +1,2 @@
-# WeMeetExcersise - A basic app designed in fullfilment of a recruitment process.
+# WeMeetExcersise 
+A template app to meet with new people,family and friends.
