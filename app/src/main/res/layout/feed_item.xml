@@ -21,7 +21,7 @@
             android:orientation="horizontal"
             android:padding="8dp">
 
-            <com.app.shixelsdating.ui.widgets.CircleImageView
+            <com.app.wemeet.ui.widgets.CircleImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:id="@+id/feed_publisher_image_view"
@@ -36,14 +36,14 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                <com.app.wemeet.ui.widgets.WeMeetTextView
                     android:layout_width="wrap_content"
                     android:id="@+id/feed_publisher_name_view"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
                     app:fontName="Roboto-Bold.ttf" />
 
-                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                <com.app.wemeet.ui.widgets.WeMeetTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/feed_type"
@@ -68,7 +68,7 @@
                     android:src="@drawable/feed_shared_time_icon"
                     tools:ignore="ContentDescription" />
 
-                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                <com.app.wemeet.ui.widgets.WeMeetTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/feed_publish_date"
@@ -101,7 +101,7 @@
                 android:layout_gravity="bottom"
                 android:orientation="horizontal">
 
-                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                <com.app.wemeet.ui.widgets.WeMeetTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
@@ -112,7 +112,7 @@
                     android:textSize="16sp"
                     app:fontName="Roboto-Regular.ttf" />
 
-                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                <com.app.wemeet.ui.widgets.WeMeetTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/feed_available_slots"
@@ -155,7 +155,7 @@
                     android:layout_height="25dp"
                     tools:ignore="ContentDescription" />
 
-                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                <com.app.wemeet.ui.widgets.WeMeetTextView
                     android:layout_width="wrap_content"
                     android:textSize="16sp"
                     app:fontName="Roboto-Bold.ttf"
@@ -180,7 +180,7 @@
                     android:layout_height="30dp"
                     tools:ignore="ContentDescription" />
 
-                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                <com.app.wemeet.ui.widgets.WeMeetTextView
                     android:layout_width="wrap_content"
                     android:textSize="16sp"
                     app:fontName="Roboto-Bold.ttf"
@@ -204,7 +204,7 @@
                     android:layout_height="25dp"
                     tools:ignore="ContentDescription" />
 
-                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                <com.app.wemeet.ui.widgets.WeMeetTextView
                     android:layout_width="wrap_content"
                     android:textSize="16sp"
                     app:fontName="Roboto-Bold.ttf"

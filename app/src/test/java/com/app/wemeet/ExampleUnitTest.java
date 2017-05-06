@@ -1,4 +1,4 @@
-package com.app.shixelsdating;
+package com.app.wemeet;
 
 import org.junit.Test;
 

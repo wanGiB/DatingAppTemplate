@@ -1,7 +1,6 @@
-package com.app.shixelsdating.ui.adapters;
+package com.app.wemeet.ui.adapters;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
@@ -11,10 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.app.shixelsdating.R;
-import com.app.shixelsdating.models.FeedItem;
-import com.app.shixelsdating.ui.widgets.CircleImageView;
-import com.app.shixelsdating.ui.widgets.WeMeetTextView;
+import com.app.wemeet.R;
+import com.app.wemeet.models.FeedItem;
+import com.app.wemeet.ui.widgets.CircleImageView;
+import com.app.wemeet.ui.widgets.WeMeetTextView;
 import com.bumptech.glide.Glide;
 
 import java.util.List;
@@ -23,7 +22,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by wan on 3/14/17.
+ * @author Wan Clem
  */
 
 public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
@@ -33,6 +32,7 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private List<FeedItem> feedItems;
 
     private Context context;
+
     public FeedAdapter(Context context, List<FeedItem> feedItems) {
         this.feedItems = feedItems;
         this.context = context;
@@ -51,7 +51,7 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         FeedItemHolder feedItemHolder = (FeedItemHolder) holder;
         FeedItem feedItem = feedItems.get(position);
         if (feedItem != null) {
-            feedItemHolder.bindFeedData(context,feedItem, position);
+            feedItemHolder.bindFeedData(context, feedItem, position);
         }
     }
 
@@ -102,7 +102,7 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             ButterKnife.bind(this, itemView);
         }
 
-        void bindFeedData(Context context,FeedItem feedItem, int position) {
+        void bindFeedData(Context context, FeedItem feedItem, int position) {
 
             this.context = context;
 
@@ -113,7 +113,7 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             Glide.with(context).load(feedItem.getFeedContentImageView()).crossFade().into(feedContentImageView);
 
-            feedContentImageView.setColorFilter(ContextCompat.getColor(context,R.color.feed_content_image_tint_color));
+            feedContentImageView.setColorFilter(ContextCompat.getColor(context, R.color.feed_content_image_tint_color));
 
             feedContentDescription.setText(feedItem.getFeedContentDescription());
             feedAvailableSlots.setText(String.valueOf(feedItem.getLeftAvailSlots()));
@@ -123,24 +123,24 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             if (feedItem.isLiked()) {
                 likedPositions.put(position, true);
-                likeFeedImageView.getDrawable().setColorFilter(ContextCompat.getColor(context,R.color.colorPrimaryDark), PorterDuff.Mode.MULTIPLY);
-                feedLikesCounter.setTextColor(ContextCompat.getColor(context,R.color.colorPrimaryDark));
+                likeFeedImageView.getDrawable().setColorFilter(ContextCompat.getColor(context, R.color.colorPrimaryDark), PorterDuff.Mode.MULTIPLY);
+                feedLikesCounter.setTextColor(ContextCompat.getColor(context, R.color.colorPrimaryDark));
             } else {
                 likedPositions.put(position, false);
-                feedLikesCounter.setTextColor(ContextCompat.getColor(context,R.color.icons_color));
+                feedLikesCounter.setTextColor(ContextCompat.getColor(context, R.color.icons_color));
             }
 
             invalidatePositions(position);
 
         }
 
-        private void invalidatePositions(int position){
+        private void invalidatePositions(int position) {
             if (likedPositions.get(position)) {
-                likeFeedImageView.getDrawable().setColorFilter(ContextCompat.getColor(context,R.color.colorPrimaryDark), PorterDuff.Mode.MULTIPLY);
-                feedLikesCounter.setTextColor(ContextCompat.getColor(context,R.color.colorPrimaryDark));
+                likeFeedImageView.getDrawable().setColorFilter(ContextCompat.getColor(context, R.color.colorPrimaryDark), PorterDuff.Mode.MULTIPLY);
+                feedLikesCounter.setTextColor(ContextCompat.getColor(context, R.color.colorPrimaryDark));
             } else {
-                likeFeedImageView.setColorFilter(ContextCompat.getColor(context,R.color.icons_color));
-                feedLikesCounter.setTextColor(ContextCompat.getColor(context,R.color.icons_color));
+                likeFeedImageView.setColorFilter(ContextCompat.getColor(context, R.color.icons_color));
+                feedLikesCounter.setTextColor(ContextCompat.getColor(context, R.color.icons_color));
             }
         }
 

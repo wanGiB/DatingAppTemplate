@@ -28,7 +28,7 @@
         android:src="@drawable/settings_icon_dark"
         tools:ignore="ContentDescription" />
 
-    <com.app.shixelsdating.ui.widgets.CircleImageView
+    <com.app.wemeet.ui.widgets.CircleImageView
         android:id="@+id/signed_in_user_image_view"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -45,7 +45,7 @@
         android:layout_marginTop="5dp"
         android:orientation="vertical">
 
-        <com.app.shixelsdating.ui.widgets.WeMeetTextView
+        <com.app.wemeet.ui.widgets.WeMeetTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -55,7 +55,7 @@
             android:textSize="25sp"
             app:fontName="Roboto-Bold.ttf" />
 
-        <com.app.shixelsdating.ui.widgets.WeMeetTextView
+        <com.app.wemeet.ui.widgets.WeMeetTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"

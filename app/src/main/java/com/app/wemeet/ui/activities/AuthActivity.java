@@ -1,4 +1,4 @@
-package com.app.shixelsdating.ui.activities;
+package com.app.wemeet.ui.activities;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -13,9 +13,9 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
-import com.app.shixelsdating.R;
-import com.app.shixelsdating.ui.widgets.WeMeetTextView;
-import com.app.shixelsdating.utils.UiUtils;
+import com.app.wemeet.R;
+import com.app.wemeet.ui.widgets.WeMeetTextView;
+import com.app.wemeet.utils.UiUtils;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;

@@ -1,14 +1,12 @@
-package com.app.shixelsdating.utils;
-
-/**
- * Created by Wan on 10/28/2016.
- **/
+package com.app.wemeet.utils;
 
 import android.support.v7.widget.RecyclerView;
 
 /**
  * This class is a ScrollListener for RecyclerView that allows to show/hide
  * views when list is scrolled.
+ *
+ * @author Wan Clem
  */
 public abstract class HideShowScrollListener extends RecyclerView.OnScrollListener {
     private static final int HIDE_THRESHOLD = 20;

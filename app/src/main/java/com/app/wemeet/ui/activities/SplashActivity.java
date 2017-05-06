@@ -1,4 +1,4 @@
-package com.app.shixelsdating.ui.activities;
+package com.app.wemeet.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,12 +6,12 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.app.shixelsdating.R;
+import com.app.wemeet.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 /**
- * Created by wan on 3/13/17.
+ * @author Wan Clem
  */
 
 public class SplashActivity extends AppCompatActivity {

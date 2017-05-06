@@ -1,24 +1,20 @@
-package com.app.shixelsdating.utils;
+package com.app.wemeet.utils;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AlertDialog;
-import android.text.Html;
 import android.text.TextUtils;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.app.shixelsdating.top_level.ApplicationLoader;
+import com.app.wemeet.top_level.ApplicationLoader;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 /**
- * Created by wan on 3/13/17.
+ * @author Wan Clem
  */
 
 public class UiUtils {
@@ -39,7 +35,7 @@ public class UiUtils {
         return Looper.myLooper() == Looper.getMainLooper();
     }
 
-    public static void runOnMain(final @NonNull Runnable runnable) {
+    private static void runOnMain(final @NonNull Runnable runnable) {
         if (isMainThread()) runnable.run();
         else handler.post(runnable);
     }
@@ -62,21 +58,8 @@ public class UiUtils {
         }
     }
 
-    public static void sorryFontsAndIconsDontTally(Context context) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(context);
-
-        builder.setMessage(Html.fromHtml("<b>Hi</b>, please pardon me on the majority of blurred icons. " +
-                "\n\nIt was pretty hard to get the real icons and fonts used in the referenced arts." +
-                "\n\nI basically snapshot the majority of the icons from the referenced art and stripped out the backgrounds."));
-
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        });
-
-        builder.create().show();
+    public static void displayDummyDialog() {
+        showSafeToast("Yope!");
     }
 
 }

@@ -14,7 +14,7 @@
         android:layout_marginStart="12dp"
         android:src="@drawable/feed_icon" />
 
-    <com.app.shixelsdating.ui.widgets.WeMeetTextView
+    <com.app.wemeet.ui.widgets.WeMeetTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -28,7 +28,7 @@
         android:textSize="17sp"
         app:fontName="Roboto-Bold.ttf" />
 
-    <com.app.shixelsdating.ui.widgets.WeMeetTextView
+    <com.app.wemeet.ui.widgets.WeMeetTextView
         android:id="@+id/nav_bagde_indicator"
         android:layout_width="wrap_content"
         android:layout_height="22dp"

@@ -1,4 +1,4 @@
-package com.app.shixelsdating.utils;
+package com.app.wemeet.utils;
 
 import android.content.Context;
 import android.graphics.Typeface;

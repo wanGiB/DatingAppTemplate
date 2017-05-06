@@ -1,13 +1,13 @@
-package com.app.shixelsdating.utils;
+package com.app.wemeet.utils;
 
-import com.app.shixelsdating.R;
-import com.app.shixelsdating.models.FeedItem;
+import com.app.wemeet.R;
+import com.app.wemeet.models.FeedItem;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wan on 3/14/17.
+ * @author Wan Clem
  */
 
 public class DummyFeedManager {

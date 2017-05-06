@@ -1,4 +1,4 @@
-package com.app.shixelsdating.ui.widgets;
+package com.app.wemeet.ui.widgets;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -6,11 +6,11 @@ import android.graphics.Typeface;
 import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
 
-import com.app.shixelsdating.R;
-import com.app.shixelsdating.utils.FontUtils;
+import com.app.wemeet.R;
+import com.app.wemeet.utils.FontUtils;
 
 /**
- * Created by wan on 3/13/17.
+ * @author Wan Clem
  */
 
 public class WeMeetTextView extends AppCompatTextView {

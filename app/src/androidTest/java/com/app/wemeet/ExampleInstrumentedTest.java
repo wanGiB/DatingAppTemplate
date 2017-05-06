@@ -1,4 +1,4 @@
-package com.app.shixelsdating;
+package com.app.wemeet;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.app.shixelsdating", appContext.getPackageName());
+        assertEquals("com.app.wemeet", appContext.getPackageName());
     }
 }

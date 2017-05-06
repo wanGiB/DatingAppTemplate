@@ -1,4 +1,4 @@
-package com.app.shixelsdating.ui.activities;
+package com.app.wemeet.ui.activities;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -19,17 +19,17 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-import com.app.shixelsdating.R;
-import com.app.shixelsdating.models.FeedItem;
-import com.app.shixelsdating.models.NavItem;
-import com.app.shixelsdating.ui.adapters.FeedAdapter;
-import com.app.shixelsdating.ui.adapters.NavListViewAdapter;
-import com.app.shixelsdating.ui.widgets.CircleImageView;
-import com.app.shixelsdating.ui.widgets.WeMeetTextView;
-import com.app.shixelsdating.utils.DummyFeedManager;
-import com.app.shixelsdating.utils.EndlessRecyclerViewScrollListener;
-import com.app.shixelsdating.utils.HideShowScrollListener;
-import com.app.shixelsdating.utils.UiUtils;
+import com.app.wemeet.R;
+import com.app.wemeet.models.FeedItem;
+import com.app.wemeet.models.NavItem;
+import com.app.wemeet.ui.adapters.FeedAdapter;
+import com.app.wemeet.ui.adapters.NavListViewAdapter;
+import com.app.wemeet.ui.widgets.CircleImageView;
+import com.app.wemeet.ui.widgets.WeMeetTextView;
+import com.app.wemeet.utils.DummyFeedManager;
+import com.app.wemeet.utils.EndlessRecyclerViewScrollListener;
+import com.app.wemeet.utils.HideShowScrollListener;
+import com.app.wemeet.utils.UiUtils;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -39,6 +39,8 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/***
+ * @author Wan Clem****/
 public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.toolbar)
@@ -144,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                UiUtils.sorryFontsAndIconsDontTally(MainActivity.this);
+                UiUtils.displayDummyDialog();
             }
         });
 
@@ -200,7 +202,7 @@ public class MainActivity extends AppCompatActivity {
     private void bindNavHeaderViewChildren(View headerView) {
         signedInUserImageView = ButterKnife.findById(headerView, R.id.signed_in_user_image_view);
         signedInUserNameView = ButterKnife.findById(headerView, R.id.signed_in_user_name_view);
-        settingsButton = ButterKnife.findById(headerView,R.id.settings_button);
+        settingsButton = ButterKnife.findById(headerView, R.id.settings_button);
         settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

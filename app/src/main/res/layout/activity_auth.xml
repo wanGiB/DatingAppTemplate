@@ -32,7 +32,7 @@
                 android:contentDescription="@string/app_logo"
                 android:src="@drawable/app_logo" />
 
-            <com.app.shixelsdating.ui.widgets.WeMeetTextView
+            <com.app.wemeet.ui.widgets.WeMeetTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -139,7 +139,7 @@
 
                 </android.support.v7.widget.CardView>
 
-                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                <com.app.wemeet.ui.widgets.WeMeetTextView
                     android:id="@+id/remember_me_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -166,7 +166,7 @@
                 app:cardElevation="3dp"
                 app:cardUseCompatPadding="true">
 
-                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                <com.app.wemeet.ui.widgets.WeMeetTextView
                     android:id="@+id/email_login_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

@@ -1,4 +1,4 @@
-package com.app.shixelsdating.utils;
+package com.app.wemeet.utils;
 
 import android.content.Context;
 import android.support.design.widget.CoordinatorLayout;
@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * Created by wan on 3/14/17.
+ * @author Wan Clem
  */
 public class ScrollAwareFABBehavior extends FloatingActionButton.Behavior{
 

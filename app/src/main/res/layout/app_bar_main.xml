@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#dddddd"
-    tools:context="com.app.shixelsdating.ui.activities.MainActivity">
+    tools:context="com.app.wemeet.com.app.wemeet.ui.activities.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
@@ -37,7 +37,7 @@
                     android:src="@drawable/toolbar_toggle"
                     tools:ignore="ContentDescription" />
 
-                <com.app.shixelsdating.ui.widgets.WeMeetTextView
+                <com.app.wemeet.ui.widgets.WeMeetTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"

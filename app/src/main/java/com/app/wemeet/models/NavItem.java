@@ -1,4 +1,4 @@
-package com.app.shixelsdating.models;
+package com.app.wemeet.models;
 
 /**
  * Created by wan on 3/13/17.

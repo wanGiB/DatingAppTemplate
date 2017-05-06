@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ShixelsDatingApp.iml" filepath="$PROJECT_DIR$/ShixelsDatingApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DatingAppTemplate.iml" filepath="$PROJECT_DIR$/DatingAppTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

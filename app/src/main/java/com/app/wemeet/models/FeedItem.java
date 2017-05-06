@@ -1,7 +1,7 @@
-package com.app.shixelsdating.models;
+package com.app.wemeet.models;
 
 /**
- * Created by wan on 3/13/17.
+ * @author Wan Clem
  */
 
 public class FeedItem {
@@ -24,7 +24,7 @@ public class FeedItem {
                     int feedContentImageView, String feedContentDescription,
                     int leftAvailSlots,
                     int feedLikesCount,
-                    int feedCommentsCount, int feedSharesCount,boolean liked) {
+                    int feedCommentsCount, int feedSharesCount, boolean liked) {
 
         this.feedPublisherName = feedPublisherName;
         this.feedPublisherPhotoId = feedPublisherPhotoId;

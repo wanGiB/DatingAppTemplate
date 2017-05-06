@@ -1,4 +1,4 @@
-package com.app.shixelsdating.ui.adapters;
+package com.app.wemeet.ui.adapters;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -14,9 +14,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
-import com.app.shixelsdating.R;
-import com.app.shixelsdating.models.NavItem;
-import com.app.shixelsdating.ui.widgets.WeMeetTextView;
+import com.app.wemeet.R;
+import com.app.wemeet.models.NavItem;
+import com.app.wemeet.ui.widgets.WeMeetTextView;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.List;
@@ -25,7 +25,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by wan on 3/13/17.
+ * @author Wan Clem
  */
 
 public class NavListViewAdapter extends ArrayAdapter<NavItem> {
@@ -33,9 +33,7 @@ public class NavListViewAdapter extends ArrayAdapter<NavItem> {
     private LayoutInflater layoutInflater;
     private SparseBooleanArray selectedPositions;
     private Context context;
-
-
-    FirebaseAuth firebaseAuth;
+    private FirebaseAuth firebaseAuth;
 
     public NavListViewAdapter(@NonNull Context context, List<NavItem> navItems) {
         super(context, 0, navItems);
@@ -84,7 +82,7 @@ public class NavListViewAdapter extends ArrayAdapter<NavItem> {
                 notifyDataSetChanged();
 
                 if (position == 5) {
-                   showSignOutPrompt();
+                    showSignOutPrompt();
                 }
             }
         });

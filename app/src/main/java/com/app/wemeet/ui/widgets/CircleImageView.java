@@ -1,4 +1,4 @@
-package com.app.shixelsdating.ui.widgets;
+package com.app.wemeet.ui.widgets;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -17,7 +17,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.util.AttributeSet;
 
-import com.app.shixelsdating.R;
+import com.app.wemeet.R;
 
 
 public class CircleImageView extends android.support.v7.widget.AppCompatImageView {
