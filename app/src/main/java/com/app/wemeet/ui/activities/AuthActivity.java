@@ -73,7 +73,6 @@ public class AuthActivity extends AppCompatActivity implements View.OnClickListe
 
     private FirebaseAuth.AuthStateListener authStateListener;
 
-
     //Progress dialog for any authentication action
     private ProgressDialog progressDialog;
 
@@ -84,13 +83,9 @@ public class AuthActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
         ButterKnife.bind(this);
-
         initProgressDialog();
-
         firebaseAuth = FirebaseAuth.getInstance();
-
         authStateListener = new FirebaseAuth.AuthStateListener() {
-
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
@@ -98,12 +93,9 @@ public class AuthActivity extends AppCompatActivity implements View.OnClickListe
                     startMainActivity();
                 }
             }
-
         };
 
-
         mCallbackManager = CallbackManager.Factory.create();
-
         facebookLogInButton.setReadPermissions("email", "public_profile");
 
         facebookLogInButton.registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
@@ -203,9 +195,9 @@ public class AuthActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.remember_me_label:
             case R.id.remember_me_check_container:
-                if (!rememberMeCheck.isChecked()){
+                if (!rememberMeCheck.isChecked()) {
                     rememberMeCheck.setChecked(true);
-                }else {
+                } else {
                     rememberMeCheck.setChecked(false);
                 }
                 break;

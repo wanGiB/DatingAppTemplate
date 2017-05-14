@@ -212,17 +212,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initFeeds() {
-
-        feedItems.addAll(DummyFeedManager.loadDummyFeeds());
-
+        feedItems.addAll(DummyFeedManager.generateDUmmyFeeds());
         feedAdapter = new FeedAdapter(this, feedItems);
-
         final LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         mainRecyclerView.setLayoutManager(linearLayoutManager);
         mainRecyclerView.setAdapter(feedAdapter);
-
         mainRecyclerView.setItemAnimator(new DefaultItemAnimator());
+        attachScrollListeners(linearLayoutManager);
+    }
 
+    private void attachScrollListeners(LinearLayoutManager linearLayoutManager) {
         mainRecyclerView.addOnScrollListener(new EndlessRecyclerViewScrollListener(linearLayoutManager) {
             @Override
             public void onLoadMore(int page, int totalItemsCount) {
@@ -248,11 +247,10 @@ public class MainActivity extends AppCompatActivity {
         mainRecyclerView.post(new Runnable() {
             @Override
             public void run() {
-                feedItems.addAll(DummyFeedManager.loadDummyFeeds());
+                feedItems.addAll(DummyFeedManager.generateDUmmyFeeds());
                 feedAdapter.notifyItemInserted(feedItems.size() - 1);
             }
         });
-
     }
 
     @Override

@@ -95,32 +95,23 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         @BindView(R.id.feed_shares_counter)
         WeMeetTextView feedSharesCounter;
 
-        Context context;
-
         FeedItemHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
         }
 
         void bindFeedData(Context context, FeedItem feedItem, int position) {
-
-            this.context = context;
-
             feedPublisherImageView.setImageResource(feedItem.getFeedPublisherPhotoId());
             feedPublisherNameView.setText(feedItem.getFeedPublisherName());
             feedType.setText(feedItem.getFeedType());
             feedPublishedDate.setText(feedItem.getFeedSharedTime());
-
             Glide.with(context).load(feedItem.getFeedContentImageView()).crossFade().into(feedContentImageView);
-
             feedContentImageView.setColorFilter(ContextCompat.getColor(context, R.color.feed_content_image_tint_color));
-
             feedContentDescription.setText(feedItem.getFeedContentDescription());
             feedAvailableSlots.setText(String.valueOf(feedItem.getLeftAvailSlots()));
             feedLikesCounter.setText(String.valueOf(feedItem.getFeedLikesCount()));
             feedCommentCounter.setText(String.valueOf(feedItem.getFeedCommentsCount()));
             feedSharesCounter.setText(String.valueOf(feedItem.getFeedSharesCount()));
-
             if (feedItem.isLiked()) {
                 likedPositions.put(position, true);
                 likeFeedImageView.getDrawable().setColorFilter(ContextCompat.getColor(context, R.color.colorPrimaryDark), PorterDuff.Mode.MULTIPLY);
@@ -129,12 +120,10 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 likedPositions.put(position, false);
                 feedLikesCounter.setTextColor(ContextCompat.getColor(context, R.color.icons_color));
             }
-
-            invalidatePositions(position);
-
+            invalidatePositions(context,position);
         }
 
-        private void invalidatePositions(int position) {
+        private void invalidatePositions(Context context,int position) {
             if (likedPositions.get(position)) {
                 likeFeedImageView.getDrawable().setColorFilter(ContextCompat.getColor(context, R.color.colorPrimaryDark), PorterDuff.Mode.MULTIPLY);
                 feedLikesCounter.setTextColor(ContextCompat.getColor(context, R.color.colorPrimaryDark));
